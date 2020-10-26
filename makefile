@@ -1,19 +1,19 @@
-All:	gueesingame.sh readme.md
+All:	gueesingame.sh README.md
 
 guessinggame.sh:
 	bash guessinggame.sh
 
-readme.md: guessinggame.sh
-	echo "#Assignment: Bash, Makefile, Git and Github" >> readme.md
-	echo "" >> readme.md
-	echo "###Date" >> readme.md
-	echo "" >> readme.md
-	echo "$$(date)" >> readme.md 
-	echo "" >> readme.md
-	echo "###Number of lines:" >> readme.md
-	echo "" >> readme.md
-	wc -l guessinggame.sh | egrep -o "[0-9]+" >> readme.md
+README.md: guessinggame.sh
+	echo "#Assignment: Bash, Makefile, Git and Github" >> README.md
+	echo "" >> README.md
+	echo "###Date" >> README.md
+	echo "" >> README.md
+	echo "$$(date)" >> README.md 
+	echo "" >> README.md
+	echo "###Number of lines:" >> README.md
+	echo "" >> README.md
+	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
 
 clean:
-	rm readme.md
+	rm README.md
 
